@@ -33,6 +33,10 @@ package celestialBodies;
  	
  	// ********** constructors ***********
     
+         public GasGiant(){
+         name = "unidentified";
+         }//end gas giant
+    
  	 public GasGiant(String n, double m, int r, int s, int a, int at, double o, int moon, Class c ) {
         super(n, m, r, s, a, at, o, moon);
         classifacation = c;

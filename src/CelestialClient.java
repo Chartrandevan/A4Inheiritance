@@ -24,7 +24,7 @@ import javax.swing.*;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-public class clientTemplate/*CHANGE THIS TO THE NAME OF THE FILE*/
+public class CelestialClient/*CHANGE THIS TO THE NAME OF THE FILE*/
 {  // begin class
 	public static void main(String args[])
 	{  // begin main

@@ -36,6 +36,10 @@ import celestialBodies.CelestialBody;
        
  	// ********** constructors ***********
         
+        public Planet(){
+           name = "unidentified"; 
+        }//end planet
+        
        public Planet(String n, double m, int r, int s, int a, int at, double o, int moon){
 		 
 		 super(n, m, r, s, a);

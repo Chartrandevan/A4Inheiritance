@@ -36,6 +36,10 @@ import celestialBodies.CelestialBody;
        
  	// ********** constructors ***********
         
+       public Star(){
+       name = "unidentified"; 
+        }
+       
        public Star(String n, double m, int r, int s, int a, Type t, int c , int p){
 		 
 		 super(n, m, r, s, a);

@@ -26,7 +26,7 @@ package celestialBodies;
         private int radius = 0; // measured in kilometers
         private double mass = 0; //measured int solar masses
         private int surfacetemp = 0;//masured in kelvin
-        private String name = "";
+        String name = "";
         private int age = 0;//in millions of years
         
  	// ********** constructors ***********

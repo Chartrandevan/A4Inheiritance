@@ -31,6 +31,10 @@ import celestialBodies.Planet;
      
  	// ********** constructors ***********
      
+     public RockyPlanet(){
+          name = "unidentified";  
+     }//end rocky planets
+     
  	public RockyPlanet(String n, double m, int r, int s, int a, int at, double o, int moon, boolean pt, boolean l) {
         super(n, m, r, s, a, at, o, moon);
         plateTectonics = pt;
