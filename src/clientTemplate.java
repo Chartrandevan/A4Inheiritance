@@ -16,6 +16,7 @@
 import celestialBodies.RockyPlanet;
 import celestialBodies.GasGiant;
 import static celestialBodies.GasGiant.Class.AmmoniaClouds;
+import static celestialBodies.GasGiant.Class.Cloudless;
 
 import celestialBodies.Star;
 import static celestialBodies.Star.Type.MainSequence;
@@ -32,20 +33,22 @@ public class clientTemplate/*CHANGE THIS TO THE NAME OF THE FILE*/
 	// ***** declaration of variables *****
 	
 	// ***** create objects *****
-		
-	
-        GasGiant neptune = new GasGiant("Neptune", 0.0000515, 24622, 55, 4500, 3693, 164.8, 13, AmmoniaClouds);  
+		  
         Star sun = new Star("The Sun", 1.0, 695700, 5778, 4600, MainSequence, 2000000, 8);
         
         ArrayList<RockyPlanet> rps = new ArrayList<RockyPlanet>();
-        RockyPlanet earth = new RockyPlanet("Earth", 0.0000033, 6371, 288, 4540, 480, 365.25, 1, true, true);
-        rps.add(earth);
-        RockyPlanet mars = new RockyPlanet("Mars", 0.000000322, 3390, 218, 4600, 200, 687.0, 2, false, false);
-        rps.add(mars);
-        RockyPlanet venus = new RockyPlanet("Venus", 0.00000245, 6052, 735, 4600, 250, 224.7, 0, true, false);
-        rps.add(venus);
+       
+        rps.add(new RockyPlanet("Earth", 0.0000033, 6371, 288, 4540, 480, 365.25, 1, true, true));
+        rps.add(new RockyPlanet("Mars", 0.000000322, 3390, 218, 4600, 200, 687.0, 2, false, false));
+        rps.add( new RockyPlanet("Venus", 0.00000245, 6052, 735, 4600, 250, 224.7, 0, true, false));
         
-  
+        ArrayList<GasGiant> ggs = new ArrayList<GasGiant>();
+        
+        ggs.add(new GasGiant("Jupiter", 0.0009543, 69911, 418, 4600, 5000, 4300, 67, Cloudless));
+        ggs.add(new GasGiant("Neptune", 0.0000515, 24622, 55, 4500, 3693, 164.8, 13, AmmoniaClouds));
+        ggs.add(new GasGiant("Saturn", 0.0002857, 58232, 130, 4600, 3000, 11000, 62, AmmoniaClouds));
+        
+        
 	// ***** create input stream *****
 	
 		//ConsoleReader console = new ConsoleReader(System.in);
@@ -70,7 +73,7 @@ public class clientTemplate/*CHANGE THIS TO THE NAME OF THE FILE*/
 	// ***** output *****
 	
 	System.out.println(rps.get(0).toString() + rps.get(1).toString() + rps.get(2).toString());
-        System.out.println(neptune.toString());
+        System.out.println(ggs.get(0).toString() + ggs.get(1).toString() + ggs.get(2).toString());
         System.out.println(sun.toString());
 	// ***** closing message *****
 	
