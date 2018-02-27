@@ -1,18 +1,17 @@
 package celestialBodies;
 
 /* **********************************************************
- * Programmer:	Rob Sveinson
- * Class:		CS20S
+ * Programmer:	Evan Chartrand
+ * Class:		CS30S
  * 
- * Assignment:	aX  qY
+ * Assignment:	A4:Inheiritance
  *
- * Description:	describe the class you are creating
+ * Description:	derived class of planet with a unique type
  *
  * 
  * *************************************************************
  */
- 
- // import files here as needed
+  // import files here as needed
  
  
  public class GasGiant extends Planet
@@ -66,4 +65,10 @@ package celestialBodies;
     
  	// ********** mutators **********
 
+    public void setClassifacation(Class classifacation) {
+        this.classifacation = classifacation;
+    }
+
+       
+       
  }  // end class

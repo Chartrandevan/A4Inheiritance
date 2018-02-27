@@ -4,12 +4,13 @@ package celestialBodies;
 import celestialBodies.CelestialBody;
 
 /* **********************************************************
- * Programmer:	Rob Sveinson
- * Class:		CS20S
+ * Programmer:	Evan Chartrand
+ * Class:		CS30S
  * 
- * Assignment:	aX  qY
+ * Assignment:	A4:Inheiritance
  *
- * Description:	describe the class you are creating
+ * Description:	Derived class from CelestialBody.java and parent class to 
+ * GasGiant.java RockyPlanet.java with some properties of planets
  *
  * 
  * *************************************************************
@@ -67,11 +68,11 @@ import celestialBodies.CelestialBody;
 
        // *********** mutators ************
 
-    public void setAtmosphericsize(int atmosphericsize) {
+    public void setAtmosphericSize(int atmosphericsize) {
         this.atmosphericsize = atmosphericsize;
     }
 
-    public void setOrbitduration(double orbitduration) {
+    public void setOrbitDuration(double orbitduration) {
         this.orbitduration = orbitduration;
     }
 

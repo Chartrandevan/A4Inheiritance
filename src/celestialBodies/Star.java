@@ -2,14 +2,16 @@ package celestialBodies;
 
 
 import celestialBodies.CelestialBody;
+import java.util.ArrayList;
 
 /* **********************************************************
- * Programmer:	Rob Sveinson
- * Class:		CS20S
+ * Programmer:	Evan Chartrand
+ * Class:		CS30S
  * 
- * Assignment:	aX  qY
+ * Assignment:	A4:Inheiritance
  *
- * Description:	describe the class you are creating
+ * Description:	Derived class from CelestialBody.java which adds some other 
+ * properties
  *
  * 
  * *************************************************************
@@ -89,10 +91,8 @@ import celestialBodies.CelestialBody;
         this.coronatemp = coronatemp;
     }
 
-    public void setPlanetsorbiting(int planetsorbiting) {
+    public void setPlanetsOrbiting(int planetsorbiting) {
         this.planetsorbiting = planetsorbiting;
     }
-
-  
     
  }  // end class

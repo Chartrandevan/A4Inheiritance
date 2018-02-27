@@ -1,12 +1,12 @@
 package celestialBodies;
-
 /* **********************************************************
- * Programmer:	Rob Sveinson
- * Class:		CS20S
+ * Programmer:	Evan Chartrand
+ * Class:		CS30S
  * 
- * Assignment:	aX  qY
+ * Assignment:	A4:Inheiritance
  *
- * Description:	describe the class you are creating
+ * Description:	A superclass for planet and star with some properties inherent 
+ * to both
  *
  * 
  * *************************************************************
@@ -26,8 +26,9 @@ package celestialBodies;
         private int radius = 0; // measured in kilometers
         private double mass = 0; //measured int solar masses
         private int surfacetemp = 0;//masured in kelvin
-        String name = "";
+        String name = ""; //replaces unique id 
         private int age = 0;//in millions of years
+       
         
  	// ********** constructors ***********
  	
@@ -94,6 +95,10 @@ package celestialBodies;
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
     
  }  // end class
